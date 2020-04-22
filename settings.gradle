@@ -1,0 +1,2 @@
+rootProject.name='Simple andCompund interest calculater'
+include ':app'

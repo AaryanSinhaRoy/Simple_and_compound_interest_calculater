@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple and Compund interest calculator</string>
+    <string name="result">Simple interest =  </string>
+    <string name="result2">Compound interest =  </string></resources>
+

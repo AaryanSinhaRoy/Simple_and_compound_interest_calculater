@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etPrincipal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="231dp"
+        app:srcCompat="@drawable/back" />
+
+    <EditText
+        android:id="@+id/etPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="471dp"
+        android:ems="10"
+        android:hint="Principal"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+
+        android:layout_marginBottom="288dp"
+        android:ems="10"
+        android:hint="Rate of Interest"
+        android:inputType="number"
+        android:textColor="#E1000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/etPrincipal" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:layout_marginBottom="373dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etRate"
+        app:layout_constraintTop_toBottomOf="@+id/etRate" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginRight="249dp"
+        android:layout_marginBottom="183dp"
+        android:background="@color/colorAccent"
+        android:text="calculate"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etTime"
+        app:layout_constraintEnd_toStartOf="@+id/btnClear"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTime" />
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginBottom="54dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</RelativeLayout>
