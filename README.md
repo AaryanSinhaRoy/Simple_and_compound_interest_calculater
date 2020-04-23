@@ -8,4 +8,4 @@ simple ui with fast and accurate calcuation.
 
 This project will be frequently updated, so make sure you keep up with it 
 
-Any pull requests which echances the app experience or speeds its devlopment with new features will be happily acceted and thanked.
+Any pull requests which enhances the app experience or speeds its devlopment with new features will be happily acceted and thanked.
